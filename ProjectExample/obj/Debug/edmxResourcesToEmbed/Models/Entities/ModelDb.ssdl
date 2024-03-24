@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InterViiewDevModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="role" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cadidate">
+    <Key>
+      <PropertyRef Name="id_candidate" />
+    </Key>
+    <Property Name="id_candidate" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_cadi" Type="nchar" MaxLength="50" />
+    <Property Name="id_vanacy" Type="int" />
+    <Property Name="Name_cadidate" Type="nvarchar" MaxLength="255" />
+    <Property Name="date_time" Type="datetime" />
+    <Property Name="phone" Type="int" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="status" Type="int" />
+    <Property Name="link_cv" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Candidate_Employe">
+    <Key>
+      <PropertyRef Name="id_CadiEmp" />
+    </Key>
+    <Property Name="id_CadiEmp" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_emp" Type="int" />
+    <Property Name="code_cadi" Type="nchar" MaxLength="50" />
+    <Property Name="DateTime_start" Type="datetime" />
+    <Property Name="DateTime_end" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="image_Emp" Type="char" MaxLength="50" />
+    <Property Name="job_position" Type="nvarchar" MaxLength="255" />
+    <Property Name="Hire_date" Type="date" Nullable="false" />
+    <Property Name="role" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'InterViiewDev.dbo.InfoUser' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="InfoUser">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="255" />
+    <Property Name="pass_word" Type="nvarchar" MaxLength="255" />
+    <Property Name="role" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Vancacy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_emp" Type="int" />
+    <Property Name="title_job_position" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="decription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="date_submitted" Type="date" Nullable="false" />
+    <Property Name="id_candidate" Type="int" />
+  </EntityType>
+  <Association Name="FK__Cadidate__id_van__4CA06362">
+    <End Role="Vancacy" Type="Self.Vancacy" Multiplicity="0..1" />
+    <End Role="Cadidate" Type="Self.Cadidate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vancacy">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cadidate">
+        <PropertyRef Name="id_vanacy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Candidate__id_em__3E52440B">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Candidate_Employe" Type="Self.Candidate_Employe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Candidate_Employe">
+        <PropertyRef Name="id_emp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vancacy__id_emp__3D5E1FD2">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Vancacy" Type="Self.Vancacy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Vancacy">
+        <PropertyRef Name="id_emp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="InterViiewDevModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cadidate" EntityType="Self.Cadidate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Candidate_Employe" EntityType="Self.Candidate_Employe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vancacy" EntityType="Self.Vancacy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InfoUser" EntityType="Self.InfoUser" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [InfoUser].[id] AS [id], 
+    [InfoUser].[username] AS [username], 
+    [InfoUser].[pass_word] AS [pass_word], 
+    [InfoUser].[role] AS [role]
+    FROM [dbo].[InfoUser] AS [InfoUser]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Cadidate__id_van__4CA06362" Association="Self.FK__Cadidate__id_van__4CA06362">
+      <End Role="Vancacy" EntitySet="Vancacy" />
+      <End Role="Cadidate" EntitySet="Cadidate" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Candidate__id_em__3E52440B" Association="Self.FK__Candidate__id_em__3E52440B">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Candidate_Employe" EntitySet="Candidate_Employe" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vancacy__id_emp__3D5E1FD2" Association="Self.FK__Vancacy__id_emp__3D5E1FD2">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Vancacy" EntitySet="Vancacy" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
