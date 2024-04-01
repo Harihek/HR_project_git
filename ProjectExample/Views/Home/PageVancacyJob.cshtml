@@ -1,0 +1,340 @@
+﻿
+@{
+    ViewBag.Title = "PageVancacyJob";
+    //Layout = "~/Views/Admin/";
+
+    List<ProjectExample.Models.Entities.Employ_Vanacies> ls = new List<ProjectExample.Models.Entities.Employ_Vanacies>();
+    if (ViewBag.Van != null)
+    {
+        ls = ViewBag.Van;
+    }
+
+    int index = 1;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tooplate's Little Fashion - About Page</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap.min.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap-icons.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/slick.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/tooplate-little-fashion.css"))
+
+    <!--
+
+    Tooplate 2127 Little Fashion
+
+    https://www.tooplate.com/view/2127-little-fashion
+
+
+    -->
+    
+</head>
+
+<body>
+
+    <section class="preloader">
+        <div class="spinner">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </section>
+
+    <main>
+
+        @Html.Partial("~/Views/Home/Menu/Menu.cshtml")
+
+        <header class="site-header section-padding-img site-header-image">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 header-info">
+                        <h1>
+                            <span class="d-block text-primary">Company</span>
+                            <span class="d-block text-dark">ABC</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <img src="@Url.Content("~/Content/Home/assets/images/header/businesspeople-meeting-office-working.jpg")" class="header-image img-fluid" alt="">
+        </header>
+
+        <section class="team section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="mb-5">Position Job -><span>Team Work</span></h2>
+                    </div>
+                    @if (ls != null)
+
+                    {
+
+                        foreach (ProjectExample.Models.Entities.Employ_Vanacies item in ls)
+                        {
+                            if (item.Vancacy.status == 0)
+                            {
+                            <div class="col-lg-4 mb-4 col-12">
+                                <div class="team-thumb d-flex align-items-center">
+
+                                    <img src="@Url.Content("~/Content/Home/assets/images/people/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg")" class="img-fluid custom-circle-image team-image me-4" alt="">
+
+                                    <div class="team-info">
+                                        <h5 class="mb-0">@item.Employee.username</h5>
+                                        <strong class="text-muted">@item.Vancacy.title_job_position</strong>
+
+                                        <input type="hidden" value="@item.Vancacy.decription" class="decription" />
+                                        <input type="hidden" value="@item.Vancacy.date_submitted" class="date_submit" />
+                                        <input type="hidden" value="@item.Vancacy.title_job_position"  class="title" />
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn custom-modal-btn" data-bs-toggle="modal" data-bs-target="#don" onclick="updateIframeSrc(this)">
+                                            <i class="bi-plus-circle-fill"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        }
+                    }
+
+
+                    @if (ls == null)
+                    {
+                        <p>Không tìm thấy dữ liệu</p>
+                    }
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-9 mx-auto col-11">
+                        <h2 class="text-center">Customer love, <br> <span>Little</span> Fashion</h2>
+
+                        <div class="slick-testimonial">
+                            <div class="slick-testimonial-caption">
+                                <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                    <img src="images/people/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                    <span>George, <strong class="text-muted">Digital Art Fashion</strong></span>
+                                </div>
+                            </div>
+
+                            <div class="slick-testimonial-caption">
+                                <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                    <img src="images/people/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                    <span>Sandar, <strong class="text-muted">Zoom Fashion Idea</strong></span>
+                                </div>
+                            </div>
+
+                            <div class="slick-testimonial-caption">
+                                <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                    <img src="images/people/portrait-british-woman.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                    <span>Marie, <strong class="text-muted">Art Fashion Design</strong></span>
+                                </div>
+                            </div>
+
+                            <div class="slick-testimonial-caption">
+                                <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                    <img src="images/people/woman-wearing-mask-face-closeup-covid-19-green-background.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                    <span>Catherine, <strong class="text-muted">Dress Fashion</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @Html.Partial("~/Views/Home/Menu/footer.cshtml")
+
+    <!-- TEAM MEMBER MODAL -->
+    <div class="modal fade" id="don" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-header flex-column">
+                    <h3 class="modal-title" id="exampleModalLabel"></h3><br />
+                    
+                        <a  href="@Url.Action("SendCv","Home")" style="background-color:lightseagreen ">Nộp CV</a>
+                   
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   
+                </div>
+
+                <div class="modal-body">
+                    @*<h5 class="mb-4">Over three years in business had the chance to work on variety of projects, with companies</h5>*@
+
+                    <div class="row mb-4">
+                        <div class="col-lg-6 col-12" id="view_derciption">
+                        </div>
+                    </div>
+
+                    <ul class="social-icon">
+                        <li class="me-3"><strong id="date_t"></strong></li>
+
+                        @*<li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>*@
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <!---ddddd--->
+
+    <!-- TEAM MEMBER MODAL -->
+    <div class="modal fade" id="kelly" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-header flex-column">
+                    <h3 class="modal-title" id="exampleModalLabel">Kelly Lisa</h3>
+
+                    <h6 class="text-muted">Global, Head of Marketing</h6>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h5 class="mb-4">Over three years in business had the chance to work on variety of projects, with companies</h5>
+
+                    <div class="row mb-4">
+                        <div class="col-lg-6 col-12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <p>Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo viverra.</p>
+                        </div>
+                    </div>
+
+                    <ul class="social-icon">
+                        <li class="me-3"><strong>Where to find?</strong></li>
+
+                        <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TEAM MEMBER MODAL -->
+    <div class="modal fade" id="marie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-header flex-column">
+                    <h3 class="modal-title" id="exampleModalLabel">Marie Sam</h3>
+
+                    <h6 class="text-muted">Founder & CEO</h6>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h5 class="mb-4">Over three years in business had the chance to work on variety of projects, with companies</h5>
+
+                    <div class="row mb-4">
+                        <div class="col-lg-6 col-12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <p>Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo viverra.</p>
+                        </div>
+                    </div>
+
+                    <ul class="social-icon">
+                        <li class="me-3"><strong>Where to find?</strong></li>
+
+                        <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-envelope"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FILES -->
+    @Scripts.Render("~/Content/Home/assets/js/jquery.min.js")
+    @Scripts.Render("~/Content/Home/assets/js/bootstrap.bundle.min.js")
+    @Scripts.Render("~/Content/Home/assets/js/Headroom.js")
+    @Scripts.Render("~/Content/Home/assets/js/jQuery.headroom.js")
+    @Scripts.Render("~/Content/Home/assets/js/slick.min.js")
+    @Scripts.Render("~/Content/Home/assets/js/custom.js")
+    <script>
+      function updateIframeSrc(button) {
+          //var cvInput = document.getElementById('decription_' + index);
+          //var cvInput1 = document.getElementById('date_submit_' + index);
+          //var cvInput2 = document.getElementById('title_' + index);
+          var teamInfo = button.parentElement;
+          var cvInput = teamInfo.querySelector('.decription');
+          var cvInput1 = teamInfo.querySelector('.date_submit');
+          var cvInput2 = teamInfo.querySelector('.title');
+
+
+          
+          var t = cvInput.value;
+          var t1 =  cvInput1.value;
+          var t2 =  cvInput2.value;
+
+          console.log(t); console.log(t1); console.log(t2);
+          var title = document.getElementById('exampleModalLabel');
+          var derciption = document.getElementById('view_derciption');
+          var datetime = document.getElementById('date_t');
+
+          title.innerHTML = t2;
+          derciption.innerHTML = t;
+          datetime.innerHTML = t1;
+
+      }
+    </script>
+</body>
+</html>
+
+
