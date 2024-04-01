@@ -1,0 +1,178 @@
+﻿@model ProjectExample.Models.Entities.Cadidate
+@{
+    ViewBag.Title = "SendCv";
+    //Layout = "~/Views/Admin/";
+    List<ProjectExample.Models.Entities.Vancacy> lsvancacies = new List<ProjectExample.Models.Entities.Vancacy>();
+    if (ViewBag.vanacies != null)
+    {
+        lsvancacies = ViewBag.vanacies;
+    }
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tooplate's Little Fashion - Contact Page</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap.min.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap-icons.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/slick.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/tooplate-little-fashion.css"))
+
+    <!--
+
+    Tooplate 2127 Little Fashion
+
+    https://www.tooplate.com/view/2127-little-fashion
+
+    -->
+</head>
+
+<body>
+
+    <section class="preloader">
+        <div class="spinner">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </section>
+
+    <main>
+
+        @Html.Partial("~/Views/Home/Menu/Menu.cshtml")
+
+        <header class="site-header section-padding-img site-header-image">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 header-info">
+                        <h1>
+                            <span class="d-block text-primary">Say hello to us</span>
+                            <span class="d-block text-dark">love to hear you</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/header/positive-european-woman-has-break-after-work.jpg" class="header-image img-fluid" alt="">
+        </header>
+
+        <section class="contact section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="m-2">Nộp CV <span>Ứng Viên</span></h2>
+                        <h7 class="m-2">tại đây -></h7><br />
+                        @if (HttpContext.Current.Session["info"] != null)
+                        {
+                            <h7>@HttpContext.Current.Session["info"]</h7>
+                            <br />
+                        }
+                        @if (HttpContext.Current.Session["info1"] != null)
+                        {
+                            <h7>@HttpContext.Current.Session["info1"]</h7>
+                            <br />
+                        }
+                    <form action="/Home/SubmitCv" method="post" enctype="multipart/form-data">
+
+                        <div class="form-floating m-2">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" value="@Model.Name_cadidate" required>
+                            <label for="name">Full name</label>
+                        </div>
+                        <div class="form-floating form-floating-outline m-2">
+                            <h7>Vị Trí Công Việc</h7>
+                            <select name="id_vanacy" id="id_vanacy">
+                                @foreach (ProjectExample.Models.Entities.Vancacy item in lsvancacies)
+                                {
+                                    <option value="@item.id" data-id="@item.id" @(item.id == Model.id_vanacy ? "selected" : "")>@item.title_job_position</option>
+                                }
+                            </select>
+
+                        </div>
+                        <div class="m-2">
+                            <input type="email" name="email" id="email" class="form-control" value="@Model.email" required>
+                        </div>
+                        <div class="m-2">
+                            <input type="file" name="link" id="link" class="form-control" value="@Model.link_cv" required>
+                        </div>
+                        <div class="col-lg-5 col-6 m-2">
+                            <button type="submit" class="form-control">Send</button>
+                        </div>
+                    </form>
+                    </div>
+
+                    @*<div class="col-lg-6 col-12 mt-5 ms-auto">
+                        <div class="row">
+                            <div class="col-6 border-end contact-info">
+                                <h6 class="mb-3">New Business</h6>
+
+                                <a href="mailto:hello@company.com" class="custom-link">
+                                    hello@company.com
+                                    <i class="bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-6 contact-info">
+                                <h6 class="mb-3">Main Studio</h6>
+
+                                <a href="mailto:studio@company.com" class="custom-link">
+                                    studio@company.com
+                                    <i class="bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-6 border-top border-end contact-info">
+                                <h6 class="mb-3">Our Office</h6>
+
+                                <p class="text-muted">Akershusstranda 20, 0150 Oslo, Norway</p>
+                            </div>
+
+                            <div class="col-6 border-top contact-info">
+                                <h6 class="mb-3">Our Socials</h6>
+
+                                <ul class="social-icon">
+
+                                    <li><a href="#" class="social-icon-link bi-messenger"></a></li>
+
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>*@
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @Html.Partial("~/Views/Home/Menu/footer.cshtml")
+
+    <!-- JAVASCRIPT FILES -->
+    @Scripts.Render("~/Content/Home/assets/js/jquery.min.js")
+    @Scripts.Render("~/Content/Home/assets/js/bootstrap.bundle.min.js")
+    @Scripts.Render("~/Content/Home/assets/js/Headroom.js")
+    @Scripts.Render("~/Content/Home/assets/js/jQuery.headroom.js")
+    @Scripts.Render("~/Content/Home/assets/js/slick.min.js")
+    @Scripts.Render("~/Content/Home/assets/js/custom.js")
+</body>
+</html>
+
