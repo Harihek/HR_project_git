@@ -5,7 +5,7 @@
         </button>
 
         <a class="navbar-brand" href="index.html">
-            <strong><span>Little</span> Fashion</strong>
+            <strong><span>Company</span> ABC</strong>
         </a>
 
         <div class="d-lg-none">
@@ -17,30 +17,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="@Url.Action("Index","Home")">Home</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">Story</a>
+                    <a class="nav-link" href="@Url.Action("PageVancacyJob","Home")">Job Vancacy</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQs</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="@Url.Action("About","Home")">About Us</a>
                 </li>
             </ul>
-
+            
             <div class="d-none d-lg-block">
-                <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                @if (HttpContext.Current.Session["account"] != null)
+                {
+                    <h7>Account Name: @HttpContext.Current.Session["account"]</h7>
+                    <br />
+                }
+                @if (HttpContext.Current.Session["role1"] == null)
+                {
+                    <a href="@Url.Action("Login","Home")" class="bi-person custom-icon me-3"></a><br />
+                }
 
-                <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                @if (HttpContext.Current.Session["role1"] != null)
+                {
+                    <a href="@Url.Action("Logout","Home")" class="">Logout</a>
+                }
             </div>
         </div>
     </div>

@@ -31,7 +31,7 @@
 
 
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/fonts/materialdesignicons.css"))
-    @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/libs/node-waves/node-waves.css"))
+    @*@Styles.Render(Url.Content("~/Content/Admin/assets/vendor/libs/node-waves/node-waves.css"))*@
 
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/fonts/materialdesignicons.css"))
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/css/core.css"))
@@ -43,13 +43,13 @@
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/libs/apex-charts/apex-charts.css"))
 
     <!-- Vendors CSS -->
-    
     <!-- Page CSS -->
     <!-- Helpers -->
-    <script src="../assets/vendor/js/helpers.js"></script>
+
+    @Scripts.Render("~/Content/Admin/assets/vendor/js/helpers.js")
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="../assets/js/config.js"></script>
+    @Scripts.Render("~/Content/Admin/assets/js/config.js")
 </head>
 
 <body>
@@ -942,22 +942,23 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    @Scripts.Render("~/Content/Admin/assets/vendors/libs/jquery/jquery.js")
-    @Scripts.Render("~/Content/Admin/assets/vendors/libs/popper/popper.js")
-    @Scripts.Render("~/Content/Admin/assets/vendors/js/bootstrap.js")
-    @Scripts.Render("~/Content/Admin/assets/vendors/libs/node-waves/node-waves.js")
-    @Scripts.Render("~/Content/Admin/assets/vendors/libs/perfect-scrollbar/perfect-scrollbar.js")
-    @Scripts.Render("~/Content/Admin/assets/vendors/js/menu.js")
-    
+    @Scripts.Render("~/Content/Admin/assets/vendor/libs/jquery/jquery.js")
+    @Scripts.Render("~/Content/Admin/assets/vendor/libs/popper/popper.js")
+    @Scripts.Render("~/Content/Admin/assets/vendor/js/bootstrap.js")
+    @Scripts.Render("~/Content/Admin/assets/vendor/libs/node-waves/node-waves.js")
+    @Scripts.Render("~/Content/Admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js")
+    @Scripts.Render("~/Content/Admin/assets/vendor/js/menu.js")
+
     <!-- endbuild -->
     <!-- Vendors JS -->
-    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    @Scripts.Render("~/Content/Admin/assets/vendor/libs/apex-charts/apexcharts.js")
 
     <!-- Main JS -->
-    <script src="../assets/js/main.js"></script>
+    @Scripts.Render("~/Content/Admin/assets/js/main.js")
 
     <!-- Page JS -->
-    <script src="../assets/js/dashboards-analytics.js"></script>
+
+    @Scripts.Render("~/Content/Admin/assets/js/dashboards-analytics.js")
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

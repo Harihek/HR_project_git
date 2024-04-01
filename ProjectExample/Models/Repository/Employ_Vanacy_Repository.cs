@@ -14,7 +14,8 @@ namespace ProjectExample.Models.Repository
         {
             try
             {
-                InterViiewDevEntities3 entities1 = new InterViiewDevEntities3();
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
+                entities1.Database.CommandTimeout = 120;
                 var rs = from c in entities1.Employees
                          join a in entities1.Vancacies on c.id equals a.id_emp
                          select new Employ_Vanacies

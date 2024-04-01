@@ -12,7 +12,7 @@ namespace ProjectExample.Models.Entities
     using System;
     using System.Collections.Generic;
     
-    public partial class InfoUser
+    public partial class infoUser
     {
         public int id { get; set; }
         public string username { get; set; }

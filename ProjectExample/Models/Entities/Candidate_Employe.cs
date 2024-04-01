@@ -19,6 +19,7 @@ namespace ProjectExample.Models.Entities
         public string code_cadi { get; set; }
         public Nullable<System.DateTime> DateTime_start { get; set; }
         public Nullable<System.DateTime> DateTime_end { get; set; }
+        public Nullable<int> status { get; set; }
     
         public virtual Employee Employee { get; set; }
     }

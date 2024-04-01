@@ -6,7 +6,7 @@
     if (ViewBag.cadidates != null)
     {
         lscadidate = ViewBag.cadidates;
-       
+
     }
 
 
@@ -40,6 +40,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
           rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/fonts/materialdesignicons.css"))
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/libs/node-waves/node-waves.css"))
 
@@ -59,6 +61,16 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     @Scripts.Render("~/Content/Admin/assets/js/config.js")
+
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap.min.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap-icons.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/slick.css"))
+
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/tooplate-little-fashion.css"))
+
 </head>
 
 <body>
@@ -87,7 +99,7 @@
                             <h5 class="card-header" style="display: flex; justify-content: center; align-items: center; height: 100%;">Danh Sách Đề Xuất Tuyển Dụng Vị Trí Công Việc</h5>
                             <div style="display: flex; align-items: center; justify-content: center">
                                 <input type="text" id="searchInput" oninput="performSearch()" placeholder="Search..." style="margin-right: 10px;border-radius: 15px;width:350px" />
-                                <a class="btn btn-info btn-lg" type="button" href="@Url.Action("PageAddVanacy","Admin")" style="height: 40px; width: 80px; font-size: 10px;">Add info vacancies</a>
+                                <a class="btn btn-info btn-lg" type="button" href="@Url.Action("PageAddCandidates","Admin")" style="height: 40px; width: 80px; font-size: 10px;">Add info vacancies</a>
                             </div>
                             <div class="table-responsive text-nowrap">
                                 @if (ViewBag.cadidates != null)
@@ -114,6 +126,7 @@
                                                         @index
                                                     </td>
                                                     <td>@item.code_cadi</td>
+                                                    <td></td>
                                                     <td>@item.Name_cadidate</td>
                                                     <td>@item.date_time</td>
                                                     <td>@item.phone</td>
@@ -128,26 +141,51 @@
                                                             {
                                                                 <option value="1">Đang xử lý</option>
                                                             }
+                                                            else if (item.status == 2)
+                                                            {
+                                                                <option value="2">Được tuyển dụng</option>
+                                                            }
+                                                            else if (item.status == 3)
+                                                            {
+                                                                <option value="2">Bị cấm</option>
+
+                                                            }
                                                         </select>
 
 
                                                     </td>
-                                                    <td>
-                                                        @item.link_cv
+                                                    <td class="">
+                                                        <input value="@item.link_cv" id="cv_cadi_@index" name="cv_" style="display: none"/>                                                    
+                                                        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#don" onclick="updateIframeSrc(@index)">
+                                                            <i class="fas fa-eye"></i>
+                                                        </button>
+
                                                     </td>
                                                     <td></td>
                                                 </tr>
                                                 index++;
 
                                             }
-
+                                            @*<div id="pdfDialog" title="Trang PDF"></div>*@
 
                                         </tbody>
                                     </table>
 
                                 }
+                                <div class="modal fade" id="don" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content border-0">
+                                            <div class="modal-body">
+                                                <iframe id="cv-iframe" src="" width="700" height="500"></iframe>
+                                                @*<input  id="cv-iframe"/>*@
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                       
+
                         <!-- Responsive Table -->
                         <!--/ Responsive Table -->
                     </div>
@@ -212,6 +250,16 @@
 
                 rows[i].style.display = match ? "" : "none";
             }
+        }
+    </script>
+    <script>
+        function updateIframeSrc(index) {
+            var cvInput = document.getElementById('cv_cadi_' + index);
+            console.log(cvInput);
+           var t = "@Url.Content("~/Content/Admin/Cv/")" + cvInput.value;
+           console.log(t);
+            var cvIframe = document.getElementById('cv-iframe');
+            cvIframe.src = t;
         }
     </script>
     <!-- Page JS -->

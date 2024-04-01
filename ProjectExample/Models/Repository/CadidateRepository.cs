@@ -13,7 +13,7 @@ namespace ProjectExample.Models.Repository
         {
             try
             {
-                InterViiewDevEntities3 entities1 = new InterViiewDevEntities3();
+                HR_projectEntities2  entities1 = new HR_projectEntities2();
                 var rs = entities1.Cadidates.ToList().Cast<T>();
 
                 return rs;
@@ -28,7 +28,7 @@ namespace ProjectExample.Models.Repository
         {
             try
             {
-                InterViiewDevEntities3 entities1 = new InterViiewDevEntities3();
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
                 if(entity is Cadidate)
                 {
                     var cadidate = entity as Cadidate;
@@ -59,8 +59,8 @@ namespace ProjectExample.Models.Repository
         public List<Cadidate> GetById(int id)
         {
             try
-            {               
-                    InterViiewDevEntities3 entities1 = new InterViiewDevEntities3();
+            {
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
                     var rs = (from c in entities1.Cadidates
                               where c.id_vanacy == id
                               select c).ToList();

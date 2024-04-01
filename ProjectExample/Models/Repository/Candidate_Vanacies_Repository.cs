@@ -13,7 +13,7 @@ namespace ProjectExample.Models.Repository
         {
             try
             {
-                InterViiewDevEntities3 entities1 = new InterViiewDevEntities3();
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
                 var rs = from c in entities1.Cadidates
                          join a in entities1.Vancacies on c.id_vanacy equals a.id
                          select new Cadidate_Vanacies

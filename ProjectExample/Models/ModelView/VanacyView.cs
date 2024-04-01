@@ -14,10 +14,11 @@ namespace ProjectExample.Models.ModelView
         {
             repository = new VanacyRepository<Vancacy>();
         }
-        public IEnumerable<Vancacy> GetAllVanCy() {
+        public IEnumerable<Vancacy> GetAllVanCy()
+        {
             return repository.GetAllValue();
         }
-        public void InsertCadidate(Vancacy vancacys)
+        public void InsertVancy(Vancacy vancacys)
         {
             try
             {
@@ -34,6 +35,66 @@ namespace ProjectExample.Models.ModelView
             {
 
             }
+        }
+        public void UpdateStatus(Vancacy vancacys, int id)
+        {
+            try
+            {
+                if (vancacys != null && id != null)
+                {
+                    repository.Update(vancacys, id);
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
+        public void UpdateVancacy(Vancacy vancacys, int id)
+        {
+            try
+            {
+                if (vancacys != null && id != null)
+                {
+                    repository.UpdateCancacy(vancacys, id);
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
+        public Vancacy GetValueIDView(string name)
+        {
+            try
+            {
+                if (name != null)
+                {
+                    return repository.GetById(name);
+                }
+                return null;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+
+        }
+        public Vancacy GetIDVancyView(int id)
+        {
+            try
+            {
+                if (id != null)
+                {
+                    return repository.GetByIdVancacy(id);
+                }
+                return null;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+
         }
     }
 }
