@@ -1,0 +1,1027 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\test2\\Net_FrameWork\\ProjectExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:1:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|d:\\test2\\net_framework\\projectexample\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\employeeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\employeeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\employrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\employrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|d:\\test2\\net_framework\\projectexample\\views\\admin\\pageregisteruser_hr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:2:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\pageregisteruser_hr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|d:\\test2\\net_framework\\projectexample\\content\\admin\\image\\638475179333293150image1.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:content\\admin\\image\\638475179333293150image1.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|d:\\test2\\net_framework\\projectexample\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dat vo\\AppData\\Local\\Temp\\.vsdbgsrc\\29ed96398ad21c303c0707d320acaed827db601af40c2c322ac87ba61965cda0\\AdminController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\employ_vanacy_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\employ_vanacy_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\cadidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\cadidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\employee_vanacies_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\employee_vanacies_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\pageaddvanacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\pageaddvanacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\pageeditvancacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\pageeditvancacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|d:\\test2\\net_framework\\projectexample\\views\\admin\\viewalltable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\viewalltable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\pageinterviewschedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\pageinterviewschedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|d:\\test2\\net_framework\\projectexample\\views\\admin\\pageregisteruser_hr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:1:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\pageregisteruser_hr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\adminview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\adminview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\pageaddcandidates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\pageaddcandidates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\menu\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\menu\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|d:\\test2\\net_framework\\projectexample\\views\\admin\\viewdetailemp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\viewdetailemp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\vanacyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\vanacyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\vanacyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\vanacyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\viewdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\viewdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\viewresultdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\viewresultdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\cadidate_vancies_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\cadidate_vancies_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\pagevancacyjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\pagevancacyjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\cadidateview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\cadidateview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\scheduleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\scheduleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\modelview\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\modelview\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\candidate_vanacies_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\candidate_vanacies_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\schedule_interview_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\schedule_interview_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\interface\\inter_face.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\interface\\inter_face.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\entities\\showinterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\entities\\showinterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\entities\\cadidate_vanacies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\entities\\cadidate_vanacies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\pagenotfound.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\pagenotfound.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\sendcv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\sendcv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\menu\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\models\\entities\\employ_vanacies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:models\\entities\\employ_vanacies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\menu\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\menu\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\scripts\\jquery-3.4.1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:scripts\\jquery-3.4.1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\scripts\\jquery-3.4.1.min.map||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:scripts\\jquery-3.4.1.min.map||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\scripts\\jquery-3.4.1.slim.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:scripts\\jquery-3.4.1.slim.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\scripts\\jquery-3.4.1.slim.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:scripts\\jquery-3.4.1.slim.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dat vo\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|D:\\test2\\Net_FrameWork\\ProjectExample\\views\\admin\\menu\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{823A65BC-E813-459B-8979-C903E20383B0}|ProjectExample.csproj|solutionrelative:views\\admin\\menu\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 165,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 208,
+          "SelectedChildIndex": 54,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "638475179333293150image1.jpg",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Content\\Admin\\Image\\638475179333293150image1.jpg",
+              "RelativeDocumentMoniker": "Content\\Admin\\Image\\638475179333293150image1.jpg",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Content\\Admin\\Image\\638475179333293150image1.jpg",
+              "RelativeToolTip": "Content\\Admin\\Image\\638475179333293150image1.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-03-31T14:40:32.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\dat vo\\AppData\\Local\\Temp\\.vsdbgsrc\\29ed96398ad21c303c0707d320acaed827db601af40c2c322ac87ba61965cda0\\AdminController.cs",
+              "ToolTip": "C:\\Users\\dat vo\\AppData\\Local\\Temp\\.vsdbgsrc\\29ed96398ad21c303c0707d320acaed827db601af40c2c322ac87ba61965cda0\\AdminController.cs [Read Only]",
+              "ViewState": "AQIAAKkBAAAAAAAAAAAAALIBAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T14:36:22.292Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AQIAAL8BAAAAAAAAAAAQwPEBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T14:20:16.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageRegisterUser_HR.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAlwFcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T14:52:58.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewDetailEmp.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewDetailEmp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewDetailEmp.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewDetailEmp.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewDetailEmp.cshtml",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAwHkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T14:08:51.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PageRegisterUser_HR.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PageRegisterUser_HR.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAswEkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T14:35:06.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployRepository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\EmployRepository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\EmployRepository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\EmployRepository.cs",
+              "RelativeToolTip": "Models\\Repository\\EmployRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T14:12:19.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PageEditVancacy.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageEditVancacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PageEditVancacy.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageEditVancacy.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PageEditVancacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-30T04:15:48.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PageAddVanacy.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageAddVanacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PageAddVanacy.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageAddVanacy.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PageAddVanacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-29T19:10:44.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ViewResultDetail.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewResultDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewResultDetail.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewResultDetail.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewResultDetail.cshtml",
+              "ViewState": "AQIAAMsAAAAAAAAAAAAAwOMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-29T08:23:29.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ShowInterView.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Entities\\ShowInterView.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\ShowInterView.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Entities\\ShowInterView.cs",
+              "RelativeToolTip": "Models\\Entities\\ShowInterView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T10:36:23.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ScheduleView.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\ScheduleView.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\ScheduleView.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\ScheduleView.cs",
+              "RelativeToolTip": "Models\\ModelView\\ScheduleView.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAArwFAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T10:20:28.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Schedule_Interview_Repository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\Schedule_Interview_Repository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\Schedule_Interview_Repository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\Schedule_Interview_Repository.cs",
+              "RelativeToolTip": "Models\\Repository\\Schedule_Interview_Repository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T10:51:26.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PageInterviewSchedule.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageInterviewSchedule.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PageInterviewSchedule.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageInterviewSchedule.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PageInterviewSchedule.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAFMAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-28T10:49:39.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SendCv.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\SendCv.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\SendCv.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\SendCv.cshtml",
+              "RelativeToolTip": "Views\\Home\\SendCv.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAHYAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-26T15:32:11.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PageVancacyJob.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\PageVancacyJob.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\PageVancacyJob.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\PageVancacyJob.cshtml",
+              "RelativeToolTip": "Views\\Home\\PageVancacyJob.cshtml",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAUwFwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-26T15:45:24.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\EmailSender.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\EmailSender.cs",
+              "RelativeToolTip": "Models\\ModelView\\EmailSender.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T15:26:05.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminView.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\AdminView.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\AdminView.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\AdminView.cs",
+              "RelativeToolTip": "Models\\ModelView\\AdminView.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T15:20:54.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\AdminRepository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\AdminRepository.cs",
+              "RelativeToolTip": "Models\\Repository\\AdminRepository.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T15:24:42.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Register.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "Views\\Home\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-26T14:32:58.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PageAddCandidates.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageAddCandidates.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PageAddCandidates.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageAddCandidates.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PageAddCandidates.cshtml",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAcwMcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-26T03:23:24.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "jquery-3.4.1.js",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.js",
+              "RelativeDocumentMoniker": "Scripts\\jquery-3.4.1.js",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.js",
+              "RelativeToolTip": "Scripts\\jquery-3.4.1.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-25T10:59:02.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "bootstrap.bundle.js",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\bootstrap.bundle.js",
+              "RelativeDocumentMoniker": "Scripts\\bootstrap.bundle.js",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\bootstrap.bundle.js",
+              "RelativeToolTip": "Scripts\\bootstrap.bundle.js",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-25T10:58:56.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "jquery-3.4.1.slim.min.js",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.slim.min.js",
+              "RelativeDocumentMoniker": "Scripts\\jquery-3.4.1.slim.min.js",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.slim.min.js",
+              "RelativeToolTip": "Scripts\\jquery-3.4.1.slim.min.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-25T11:29:47.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "jquery-3.4.1.min.map",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.min.map",
+              "RelativeDocumentMoniker": "Scripts\\jquery-3.4.1.min.map",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.min.map",
+              "RelativeToolTip": "Scripts\\jquery-3.4.1.min.map",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-25T11:29:12.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "jquery-3.4.1.slim.js",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.slim.js",
+              "RelativeDocumentMoniker": "Scripts\\jquery-3.4.1.slim.js",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Scripts\\jquery-3.4.1.slim.js",
+              "RelativeToolTip": "Scripts\\jquery-3.4.1.slim.js",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-25T11:29:07.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-25T10:59:47.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Web.config",
+              "RelativeDocumentMoniker": "Views\\Web.config",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Web.config",
+              "RelativeToolTip": "Views\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-25T10:40:34.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PageNotFound.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageNotFound.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PageNotFound.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\PageNotFound.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PageNotFound.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-24T10:28:41.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserView.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\UserView.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\UserView.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\UserView.cs",
+              "RelativeToolTip": "Models\\ModelView\\UserView.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAswBsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T10:17:05.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\UserRepository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Models\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T10:16:11.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeView.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\EmployeeView.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\EmployeeView.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\EmployeeView.cs",
+              "RelativeToolTip": "Models\\ModelView\\EmployeeView.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAQwDIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T10:47:13.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-24T10:38:09.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-24T10:19:59.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "footer.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Menu\\footer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Menu\\footer.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Menu\\footer.cshtml",
+              "RelativeToolTip": "Views\\Home\\Menu\\footer.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-24T10:37:34.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Menu\\Menu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Menu\\Menu.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Menu\\Menu.cshtml",
+              "RelativeToolTip": "Views\\Home\\Menu\\Menu.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-24T10:36:11.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ViewDetails.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewDetails.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewDetails.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwBAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-23T09:45:20.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Employee_Vanacies_View.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\Employee_Vanacies_View.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\Employee_Vanacies_View.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\Employee_Vanacies_View.cs",
+              "RelativeToolTip": "Models\\ModelView\\Employee_Vanacies_View.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T09:53:56.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Employ_Vanacies.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Entities\\Employ_Vanacies.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Employ_Vanacies.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Entities\\Employ_Vanacies.cs",
+              "RelativeToolTip": "Models\\Entities\\Employ_Vanacies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T09:50:01.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employ_Vanacy_Repository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\Employ_Vanacy_Repository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\Employ_Vanacy_Repository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\Employ_Vanacy_Repository.cs",
+              "RelativeToolTip": "Models\\Repository\\Employ_Vanacy_Repository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T09:49:00.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Cadidate_Vancies_View.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\Cadidate_Vancies_View.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\Cadidate_Vancies_View.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\Cadidate_Vancies_View.cs",
+              "RelativeToolTip": "Models\\ModelView\\Cadidate_Vancies_View.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T10:28:04.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Candidate_Vanacies_Repository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\Candidate_Vanacies_Repository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\Candidate_Vanacies_Repository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\Candidate_Vanacies_Repository.cs",
+              "RelativeToolTip": "Models\\Repository\\Candidate_Vanacies_Repository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA1wBYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T09:54:06.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Cadidate_Vanacies.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Entities\\Cadidate_Vanacies.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Cadidate_Vanacies.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Entities\\Cadidate_Vanacies.cs",
+              "RelativeToolTip": "Models\\Entities\\Cadidate_Vanacies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T09:53:10.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VanacyView.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\VanacyView.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\VanacyView.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\VanacyView.cs",
+              "RelativeToolTip": "Models\\ModelView\\VanacyView.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAqwBoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:26:43.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VanacyRepository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\VanacyRepository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\VanacyRepository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\VanacyRepository.cs",
+              "RelativeToolTip": "Models\\Repository\\VanacyRepository.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAmwCAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:23:24.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAlwNIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T14:26:36.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CadidateView.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\CadidateView.cs",
+              "RelativeDocumentMoniker": "Models\\ModelView\\CadidateView.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\ModelView\\CadidateView.cs",
+              "RelativeToolTip": "Models\\ModelView\\CadidateView.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAABwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:58:31.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AQIAANQBAAAAAAAAAAAQwOEBAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T14:26:46.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Inter_face.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\interface\\Inter_face.cs",
+              "RelativeDocumentMoniker": "Models\\interface\\Inter_face.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\interface\\Inter_face.cs",
+              "RelativeToolTip": "Models\\interface\\Inter_face.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA6wBMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:38:19.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CadidateRepository.cs",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\CadidateRepository.cs",
+              "RelativeDocumentMoniker": "Models\\Repository\\CadidateRepository.cs",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Models\\Repository\\CadidateRepository.cs",
+              "RelativeToolTip": "Models\\Repository\\CadidateRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAqwCYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:34:47.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Navbar.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Menu\\Navbar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Menu\\Navbar.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Menu\\Navbar.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Menu\\Navbar.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwFEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-22T08:35:37.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ViewAllTable.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewAllTable.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewAllTable.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\ViewAllTable.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewAllTable.cshtml",
+              "ViewState": "AQIAAM0AAAAAAAAAAAAAAOAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T14:45:20.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "footer.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Menu\\footer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Menu\\footer.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Menu\\footer.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Menu\\footer.cshtml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswBkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T14:18:23.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T14:17:18.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Menu\\Menu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Menu\\Menu.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Menu\\Menu.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Menu\\Menu.cshtml",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAswN4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T14:11:53.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAKoDAAAAAAAAAAAAALADAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T14:45:52.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "PerfCounters.cs",
+              "DocumentMoniker": "C:\\Users\\dat vo\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs",
+              "ToolTip": "C:\\Users\\dat vo\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs [Read Only]",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAiwEsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T14:37:42.333Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\test2\\Net_FrameWork\\ProjectExample\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAAwPwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T14:26:26.753Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
