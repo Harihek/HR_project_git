@@ -1,0 +1,20 @@
+﻿
+@model ProjectExample.Models.Entities.infoUser
+@{
+    ViewBag.Title = "AddAvtImage";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AddAvtImage</h2>
+@*<form action="/Home/SaveImage" method="post" enctype="multipart/form-data">
+        <div class="input-group input-group-merge m-4">
+            <h7>Nộp CV Ứng Viên</h7>
+            <input type="file" name="ff" id="ff" />
+        </div>
+    </form>*@
+@using (Html.BeginForm("EditAvatar", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="avatar" />
+    <input type="submit" value="Save" />
+}
+
