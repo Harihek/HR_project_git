@@ -65,5 +65,19 @@ namespace ProjectExample.Models.ModelView
                 return employee;
             }
         }
+        public void UpdateEmp(Employee emp)
+        {
+            try
+            {
+                if (emp != null)
+                {
+                    repository.UpdateImage(emp, emp.id);
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
     }
 }

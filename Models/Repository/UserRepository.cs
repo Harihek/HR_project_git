@@ -53,5 +53,29 @@ namespace ProjectExample.Models.Repository
         {
             throw new NotImplementedException();
         }
+        public void UpdateImage(infoUser user, int id)
+        {
+            try
+            {
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
+
+                // Tìm người dùng cần cập nhật thông tin trong cơ sở dữ liệu
+                var userToUpdate = entities1.infoUsers.FirstOrDefault(u => u.id == id);
+
+                if (userToUpdate != null)
+                {
+                    // Cập nhật thông tin người dùng
+                    userToUpdate.image_User = user.image_User;
+
+                    // Lưu thay đổi vào cơ sở dữ liệu
+                    entities1.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ nếu có
+            }
+        }
+
     }
 }

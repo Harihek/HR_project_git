@@ -512,7 +512,61 @@ namespace ProjectExample.Controllers
                 return null;
             }
         }
+        [HttpGet]
+        public ActionResult UploadImageEmp()
+        {
+            try
+            {
+                string username = HttpContext.Session["account"] as string;
+                if (!string.IsNullOrEmpty(username))
+                {
+                    // Lấy thông tin người dùng từ cơ sở dữ liệu
+                    Employee emp = employeeView.GetValueID(username);
+                    if (emp != null)
+                    {
+                        ViewBag.UserID = emp.username; // Truyền tên người dùng vào ViewBag để sử dụng trong view
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ nếu có
+            }
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult SubmitImage(HttpPostedFileBase image)
+        {
+            try
+            {
+                string username = HttpContext.Session["account"] as string;
+                if (image != null && !string.IsNullOrEmpty(username))
+                {
+                    string avatarFileName = DateTime.Now.Ticks + image.FileName;
+                    string avatarPath = Server.MapPath("~/Content/Admin/Image");
+                    string newPath = Path.Combine(avatarPath, avatarFileName);
+                    image.SaveAs(newPath);
+
+                    // Cập nhật đường dẫn ảnh mới vào cơ sở dữ liệu
+                    Employee emp = employeeView.GetValueID(username);
+                    if (emp != null)
+                    {
+                        emp.image_Emp = avatarFileName;
+                        employeeView.UpdateEmp(emp);
+                    }
+
+                    // Redirect về trang Index sau khi upload ảnh thành công
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ nếu có
+            }
+            // Nếu có lỗi, redirect về trang Index
+            return RedirectToAction("Index");
+        }
 
 
     }

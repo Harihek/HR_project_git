@@ -26,29 +26,36 @@
                     <a class="nav-link" href="@Url.Action("About","Home")">About Us</a>
                 </li>
             </ul>
-            
-            <div class="d-none d-lg-block">
+
+            <div class="d-flex align-items-center">
+
                 @if (!string.IsNullOrEmpty(ViewBag.ImagePath))
                 {
-                    <img src="@Url.Content(ViewBag.ImagePath)" class="avatar-img" style="width: 30px; height: 30px; border-radius: 50%;" />
+                    <img src="@Url.Content(ViewBag.ImagePath)" class="avatar-img me-3" style="width: 50px; height: 50px; border-radius: 50%;" />
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.ImagePath))
+                {
+                    <a href="@Url.Action("UploadImage","Home")" class="bi bi-pencil custom-icon text-decoration-none mt-2" id="editImage"></a> <!-- Thêm icon chỉnh sửa ảnh -->
                 }
 
+                <div>
+                    @if (HttpContext.Current.Session["account"] != null)
+                    {
+                        <h6 class="mb-0">Hello, @HttpContext.Current.Session["account"]</h6>
+                    }
 
-                @if (HttpContext.Current.Session["account"] != null)
-                {
-                    <h7>Account Name: @HttpContext.Current.Session["account"]</h7>
-                    <br />
-                }
-                @if (HttpContext.Current.Session["role1"] == null)
-                {
-                    <a href="@Url.Action("Login","Home")" class="bi-person custom-icon me-3"></a><br />
-                }
+                    @if (HttpContext.Current.Session["role1"] == null)
+                    {
+                        <a href="@Url.Action("Login","Home")" class="bi bi-person custom-icon text-decoration-none me-3"></a>
+                    }
 
-                @if (HttpContext.Current.Session["role1"] != null)
-                {
-                    <a href="@Url.Action("Logout","Home")" class="">Logout</a>
-                }
+                    @if (HttpContext.Current.Session["role1"] != null)
+                    {
+                        <a href="@Url.Action("Logout","Home")">Logout</a>
+                    }
+                </div>
             </div>
+
         </div>
     </div>
 </nav>

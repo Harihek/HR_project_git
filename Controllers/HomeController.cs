@@ -244,5 +244,61 @@ namespace ProjectExample.Controllers
 
 
         }
+        [HttpGet]
+        public ActionResult UploadImage()
+        {
+            try
+            {
+                string username = HttpContext.Session["account"] as string;
+                if (!string.IsNullOrEmpty(username))
+                {
+                    // Lấy thông tin người dùng từ cơ sở dữ liệu
+                    infoUser userInfo = userView.GetValueID(username);
+                    if (userInfo != null)
+                    {
+                        ViewBag.UserID = userInfo.username; // Truyền tên người dùng vào ViewBag để sử dụng trong view
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ nếu có
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SubmitImage(HttpPostedFileBase image)
+        {
+            try
+            {
+                string username = HttpContext.Session["account"] as string;
+                if (image != null && !string.IsNullOrEmpty(username))
+                {
+                    string avatarFileName = DateTime.Now.Ticks + image.FileName;
+                    string avatarPath = Server.MapPath("~/Content/Home/Image");
+                    string newPath = Path.Combine(avatarPath, avatarFileName);
+                    image.SaveAs(newPath);
+
+                    // Cập nhật đường dẫn ảnh mới vào cơ sở dữ liệu
+                    infoUser user = userView.GetValueID(username);
+                    if (user != null)
+                    {
+                        user.image_User = avatarFileName;
+                        userView.UpdateUser(user);
+                    }
+
+                    // Redirect về trang Index sau khi upload ảnh thành công
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ nếu có
+            }
+            // Nếu có lỗi, redirect về trang Index
+            return RedirectToAction("Index");
+        }
+
     }
 }

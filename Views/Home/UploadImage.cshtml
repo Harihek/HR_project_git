@@ -1,0 +1,42 @@
+﻿@model ProjectExample.Models.Entities.infoUser
+@{
+    ViewBag.Title = "UploadImage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .upload-form {
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+</style>
+
+<h2 class="text-center">Thay đổi ảnh đại diện</h2>
+
+<div class="upload-form">
+    @using (Html.BeginForm("SubmitImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+    {
+       <div class="form-group">
+           <div class="col-md-10">
+               <h6>Thêm hình ảnh mới</h6>
+           </div>
+           <div class="col-md-10">
+               <input type="file" id="image" name="image" accept="image/*" class="form-control-file" />
+               @Html.ValidationMessageFor(model => model.image_User, "", new { @class = "text-danger" })
+           </div>
+       </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </div>
+    }
+</div>

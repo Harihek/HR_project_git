@@ -68,28 +68,29 @@ namespace ProjectExample.Models.Repository
             }
 
         }
-        //public T GetID(int id)
-        //{
-        //    try
-        //    {
-        //        try
-        //        {
-        //            HR_projectEntities2 entities1 = new HR_projectEntities2();
-        //            var rs = (from c in entities1.Employees
-        //                      where c.id == id
-        //                      select c).FirstOrDefault();
-        //            return (T)(object)rs;
+        public void UpdateImage(Employee emp, int id)
+        {
+            try
+            {
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
 
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            throw new NotImplementedException();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
+                // Tìm người dùng cần cập nhật thông tin trong cơ sở dữ liệu
+                var EmpToUpdate = entities1.Employees.FirstOrDefault(u => u.id == id);
 
-        //    }
-        //}
+                if (EmpToUpdate != null)
+                {
+                    // Cập nhật thông tin người dùng
+                    EmpToUpdate.image_Emp = emp.image_Emp;
+
+                    // Lưu thay đổi vào cơ sở dữ liệu
+                    entities1.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ nếu có
+            }
+        }
+
     }
 }

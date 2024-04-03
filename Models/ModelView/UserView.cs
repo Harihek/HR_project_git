@@ -37,6 +37,20 @@ namespace ProjectExample.Models.ModelView
 
             }
         }
+        public void UpdateUser(infoUser user)
+        {
+            try
+            {
+                if (user != null)
+                {
+                    repository.UpdateImage(user, user.id);
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
         public infoUser GetValueID(string username)
         {
             // Thực hiện truy vấn để lấy thông tin Employee từ username
@@ -53,5 +67,6 @@ namespace ProjectExample.Models.ModelView
                 return info;
             }
         }
+
     }
 }
