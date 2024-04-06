@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using System.Xml.Linq;
+using ProjectExample.Helpers;
 
 namespace ProjectExample.Controllers
 {
@@ -200,6 +201,8 @@ namespace ProjectExample.Controllers
                 {
                     Vancacy vancacy = new Vancacy();
                     string name = HttpContext.Session["account"] as string;
+                    string imagePath = GetImagePathFromDatabase(name);
+                    ViewBag.ImagePath = imagePath;
                     if (cadidateView != null)
                     {
                             ViewBag.vanacys = Views2.GetAllValues();
@@ -393,6 +396,7 @@ namespace ProjectExample.Controllers
                     if (Enable != null)
                     {
                         scheduleView.InsertSchedule(id_e1,id_e2,id_e3,code,dateTimeStart,dateTimeEnd);
+                        return RedirectToAction("ViewAllTable", "Admin");
                     }
                 }
                 return RedirectToAction("PageInterviewSchedule", "Admin");
@@ -477,6 +481,7 @@ namespace ProjectExample.Controllers
             try
             {
                 string emailUser = base.Request.Params["email"];
+                string pass = Request.Params["password"];
                 if (model != null && image != null)
                 {
                     string pathUpload = base.Server.MapPath("~/Content/Admin/Image");
@@ -489,6 +494,7 @@ namespace ProjectExample.Controllers
                         model.image_Emp = filename;
                         model.role = "USER_HR";
                         model.Hire_date = DateTime.Now;
+                        model.password = EncryptionHelper.EncryptPassword(pass);
                         //string email = model.email;
                         employeeView.InsetEmp(model);
                         base.HttpContext.Session["info"] = "tạo thành công";

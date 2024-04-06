@@ -57,12 +57,23 @@ namespace ProjectExample.Models.ModelView
             // Dưới đây là một đoạn mã giả để minh họa
 
             // Kết nối cơ sở dữ liệu
-            using (var dbContext = new HR_projectEntities2())
+            try
             {
-                // Tìm Employee có username trùng khớp
-                var employee = dbContext.Employees.FirstOrDefault(e => e.username == username);
-
-                return employee;
+                if (!string.IsNullOrEmpty(username))
+                {
+                    // Sử dụng repository để lấy thông tin Employee từ username
+                    return repository.GetValueByUsername(username);
+                }
+                else
+                {
+                    throw new ArgumentException("Username is null or empty!");
+                }
+            }
+            catch (Exception e)
+            {
+                // Xử lý ngoại lệ nếu cần
+                // Ví dụ: log lỗi, thông báo cho người dùng, v.v.
+                return null; // Hoặc là throw nếu bạn muốn truyền ngoại lệ ra ngoài
             }
         }
         public void UpdateEmp(Employee emp)

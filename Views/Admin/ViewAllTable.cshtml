@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/fonts/materialdesignicons.css"))
-    @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/libs/node-waves/node-waves.css"))
+    @*@Styles.Render(Url.Content("~/Content/Admin/assets/vendor/libs/node-waves/node-waves.css"))*@
 
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/fonts/materialdesignicons.css"))
     @Styles.Render(Url.Content("~/Content/Admin/assets/vendor/css/core.css"))
@@ -82,13 +82,13 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     @Scripts.Render("~/Content/Admin/assets/js/config.js")
 
-    @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap.min.css"))
+    @*@Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap.min.css"))
 
     @Styles.Render(Url.Content("~/Content/Home/assets/css/bootstrap-icons.css"))
 
     @Styles.Render(Url.Content("~/Content/Home/assets/css/slick.css"))
 
-    @Styles.Render(Url.Content("~/Content/Home/assets/css/tooplate-little-fashion.css"))
+    @Styles.Render(Url.Content("~/Content/Home/assets/css/tooplate-little-fashion.css"))*@
     <style>
         .button-with-icon {
             display: inline-flex;
@@ -184,7 +184,7 @@
                         <h4 class="py-3 mb-4"><span class="text-muted fw-light"></span> </h4>
                         <!-- Basic Bootstrap Table -->
                         <div class="card">
-                            <h5 class="card-header" style="display: flex; justify-content: center; align-items: center; height: 100%;">Danh Sách Đề Xuất Tuyển Dụng Vị Trí Công Việc</h5>
+                            <h5 class="card-header" style="display: flex; justify-content: center; align-items: center; height: 90%;">Danh Sách Đề Xuất Tuyển Dụng Vị Trí Công Việc</h5>
                             <div style="display: flex; align-items: center; justify-content: center">
                                 <input type="text" id="searchInput" oninput="performSearch()" placeholder="Search..." style="margin-right: 10px;border-radius: 15px;width:350px" />
                                 <a class="btn btn-info btn-lg" type="button" href="@Url.Action("PageAddVanacy","Admin")" style="height: 40px; width: 80px; font-size: 10px;">Add info vacancies</a>
@@ -311,7 +311,7 @@
 
                                 }
                             </div>
-                        </div>               
+                        </div>
                         <hr class="my-5" />
                         <div class="card">
                             <h5 class="card-header" style="display: flex; justify-content: center; align-items: center; height: 100%;">Danh sách phỏng vấn ứng viên đã đề xuất</h5>
@@ -411,7 +411,10 @@
 
     <!-- endbuild -->
     <!-- Vendors JS -->
+    @Scripts.Render("~/Content/Admin/assets/vendor/libs/apex-charts/apexcharts.js")
+
     <!-- Main JS -->
+    @Scripts.Render("~/Content/Admin/assets/js/main.js")
 
     @Scripts.Render("~/Content/Admin/assets/js/main.js")
 

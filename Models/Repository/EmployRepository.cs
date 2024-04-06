@@ -91,6 +91,22 @@ namespace ProjectExample.Models.Repository
                 // Xử lý ngoại lệ nếu có
             }
         }
+        public T GetValueByUsername(string username)
+        {
+            try
+            {
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
+                var rs = (from c in entities1.Employees
+                          where c.username == username
+                          select c).FirstOrDefault();
+                return (T)(object)rs;
+            }
+            catch (Exception ex)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
 
     }
 }

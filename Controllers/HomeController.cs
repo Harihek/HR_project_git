@@ -9,6 +9,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
 
+using ProjectExample.Helpers;
+
 namespace ProjectExample.Controllers
 {
     public class HomeController : Controller
@@ -17,8 +19,10 @@ namespace ProjectExample.Controllers
         private readonly UserView userView;
         public readonly CadidateView cadidateView;
         private readonly VanacyView vanacyView;
+        private readonly EmployeeView employeeView;
         public HomeController()
         {
+            employeeView = new EmployeeView();
             userView = new UserView();
             Views2 = new Employee_Vanacies_View();
             vanacyView = new VanacyView();
@@ -64,6 +68,102 @@ namespace ProjectExample.Controllers
 
             return View();
         }
+        //[HttpPost]
+        //public ActionResult SubmitLogin(infoUser user, Employee emp)
+        //{
+        //    try
+        //    {
+        //        if (user != null && !string.IsNullOrEmpty(user.username) && !string.IsNullOrEmpty(user.pass_word))
+        //        {
+        //            // Kiểm tra thông tin người dùng trong bảng User
+        //            var userFromDB = userView.GetValueID(user.username);
+
+        //            if (userFromDB != null)
+        //            {
+        //                // Kiểm tra mật khẩu nhập vào
+        //                if (EncryptionHelper.VerifyPassword(user.pass_word, userFromDB.pass_word))
+        //                {
+        //                    // Đăng nhập thành công, lưu thông tin người dùng vào session
+        //                    Session["account"] = user.username;
+
+        //                    // Kiểm tra role và redirect tới trang tương ứng
+        //                    if (userFromDB.role == "USER")
+        //                    {
+        //                        return RedirectToAction("Index", "Home");
+        //                    }
+        //                    else if (userFromDB.role == "USER_HR")
+        //                    {
+        //                        return RedirectToAction("Index", "Admin");
+        //                    }
+        //                }
+        //                else
+        //                {
+        //                    // Đăng nhập thất bại do sai mật khẩu
+        //                    ViewBag.Error = "Invalid password";
+        //                    return View("Login");
+        //                }
+        //            }
+        //            else if (emp != null && !string.IsNullOrEmpty(emp.username) && !string.IsNullOrEmpty(emp.password))
+        //            {
+        //                // Kiểm tra thông tin người dùng trong bảng Employee
+        //                var empFromDB = employeeView.GetValueIDView(emp.username);
+
+        //                if (empFromDB != null)
+        //                {
+        //                    // Kiểm tra mật khẩu nhập vào
+        //                    if (EncryptionHelper.VerifyPassword(emp.password, empFromDB.password))
+        //                    {
+        //                        // Đăng nhập thành công, lưu thông tin người dùng vào session
+        //                        Session["account"] = emp.username;
+
+        //                        // Kiểm tra role và redirect tới trang tương ứng
+        //                        if (empFromDB.role == "USER")
+        //                        {
+        //                            return RedirectToAction("Index", "Home");
+        //                        }
+        //                        else if (empFromDB.role == "USER_HR")
+        //                        {
+        //                            return RedirectToAction("Index", "Admin");
+        //                        }
+        //                    }
+        //                    else
+        //                    {
+        //                        // Đăng nhập thất bại do sai mật khẩu
+        //                        ViewBag.Error = "Invalid password";
+        //                        return View("Login");
+        //                    }
+        //                }
+        //                else
+        //                {
+        //                    // Không tìm thấy người dùng trong cơ sở dữ liệu
+        //                    ViewBag.Error = "User not found";
+        //                    return View("Login");
+        //                }
+        //            }
+        //            else
+        //            {
+        //                // Thông tin đăng nhập không hợp lệ
+        //                ViewBag.Error = "Invalid username or password";
+        //                return View("Login");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            // Đối tượng user là null hoặc thiếu thông tin cần thiết
+        //            ViewBag.Error = "Invalid user object or missing credentials";
+        //            return View("Login");
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Xử lý ngoại lệ
+        //        ViewBag.Error = "An error occurred while processing your request";
+        //        return View("Login");
+        //    }
+        //    return null;
+        //}
+
+
         public ActionResult Logout()
         {
             HttpContext.Session.Remove("account");
@@ -92,12 +192,11 @@ namespace ProjectExample.Controllers
         {
             try
             {
-                if (model != null && image != null)
+                if (model != null)
                 {
                     string confirmPass = Request.Params["confirm_password"];
                     string pass = Request.Params["pass"];
-
-                    if (pass.Equals(confirmPass))
+                    if (image !=null && pass.Equals(confirmPass))
                     {
                         string avatarFileName = DateTime.Now.Ticks + image.FileName;
                         string avatarPath = base.Server.MapPath("~/Content/Home/Image");
@@ -110,7 +209,7 @@ namespace ProjectExample.Controllers
                             base.HttpContext.Session["info"] = "Create Account Successfully";
                             model.image_User = avatarFileName;
                             model.role = "USER";
-                            model.pass_word = pass;
+                            model.pass_word = EncryptionHelper.EncryptPassword(pass);
                             userView.InsertUser(model);
 
                         }
@@ -121,6 +220,18 @@ namespace ProjectExample.Controllers
                         }
                         return RedirectToAction("Login", "Home");
                     }
+                    else if (image == null && pass.Equals(confirmPass))
+                     {
+                        base.HttpContext.Session["info"] = "Create Account Successfully";
+                        model.role = "USER";
+                        model.pass_word = EncryptionHelper.EncryptPassword(pass);
+                        userView.InsertUser(model);
+                    }
+                    else
+                        {
+                            base.HttpContext.Session["info"] = "Create Account Failed";
+
+                        }
                 }
             }
             catch (Exception ex)
@@ -239,10 +350,6 @@ namespace ProjectExample.Controllers
             {
                 return RedirectToAction("PageNotFound", "Admin");
             }
-
-
-
-
         }
         [HttpGet]
         public ActionResult UploadImage()

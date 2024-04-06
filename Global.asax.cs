@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using ProjectExample.Helpers;
 
 namespace ProjectExample
 {
@@ -48,7 +49,8 @@ namespace ProjectExample
                     IEnumerable<Employee> employees = employeeView.GetAllVanCy();
                     foreach (var employe in employees)
                     {
-                        if (employe.username.Equals(user123) && employe.password.Equals(pass123))
+                        //var hash = EncryptionHelper.EncryptPassword(pass123);
+                        if (employe.username.Equals(user123) && EncryptionHelper.VerifyPassword(pass123, employe.password))
                         {
                             string role = employe.role;
                             string us = employe.username;
@@ -69,7 +71,7 @@ namespace ProjectExample
                     IEnumerable<infoUser> user1 = userview1.GetAllVanCy();
                     foreach (var userdb in user1)
                     {
-                        if (userdb.username.Equals(user123) && userdb.pass_word.Equals(pass123))
+                        if (userdb.username.Equals(user123) && EncryptionHelper.VerifyPassword(pass123, userdb.pass_word))
                         {
                             string role = userdb.role;
                             string us = userdb.username;
@@ -116,8 +118,6 @@ namespace ProjectExample
                 {
                     HttpContext.Current.RewritePath("/Home/Login");
                 }
-
-
            
         }
     }

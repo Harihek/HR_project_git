@@ -1,4 +1,4 @@
-﻿@model ProjectExample.Models.Entities.Employee 
+﻿@model ProjectExample.Models.Entities.Employee
 @{
     ViewBag.Title = "PageRegisterUser_HR";
     //Layout = "~/Views/Admin/";
@@ -19,7 +19,7 @@
         <title>Vertical Layouts - Forms | Materio - Bootstrap Material Design Admin Template</title>
 
         <meta name="description" content="" />
-
+        <x></x>
         @Styles.Render(Url.Content("~/Content/Admin/assets/img/favicon/favicon.ico"))
 
         <!-- Fonts -->
@@ -120,9 +120,9 @@
                                                     </select>
                                                 </div>
                                                 @*<div class="form-floating form-floating-outline mb-4">
-                <input type="text" id="basic-default-datetime" class="form-control" placeholder="Select date and time" name="date_time" data-flatpickr="datetime" value="@Model.Hire_date">
-                <label for="basic-default-datetime">Thời gian lên lịch</label>
-            </div>*@
+                                                        <input type="text" id="basic-default-datetime" class="form-control" placeholder="Select date and time" name="date_time" data-flatpickr="datetime" value="@Model.Hire_date">
+                                                        <label for="basic-default-datetime">Thời gian lên lịch</label>
+                                                    </div>*@
 
 
                                                 <button type="submit" class="btn btn-primary" id="btnSave">Tạo</button>
@@ -176,7 +176,7 @@
                 enableTime: true,
                 dateFormat: "Y-m-d H:i",
             });
-        </script>   
+        </script>
         <!-- Page JS -->
         <!-- Place this tag in your head or just before your close body tag. -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>

@@ -66,7 +66,6 @@ namespace ProjectExample.Models.Repository
                 {
                     // Cập nhật thông tin người dùng
                     userToUpdate.image_User = user.image_User;
-
                     // Lưu thay đổi vào cơ sở dữ liệu
                     entities1.SaveChanges();
                 }
@@ -74,6 +73,21 @@ namespace ProjectExample.Models.Repository
             catch (Exception ex)
             {
                 // Xử lý ngoại lệ nếu có
+            }
+        }
+        public T GetValueByUsername(string username)
+        {
+            try
+            {
+                HR_projectEntities2 entities1 = new HR_projectEntities2();
+                var rs = (from c in entities1.infoUsers
+                          where c.username == username
+                          select c).FirstOrDefault();
+                return (T)(object)rs;
+            }
+            catch (Exception ex)
+            {
+                throw new NotImplementedException();
             }
         }
 
